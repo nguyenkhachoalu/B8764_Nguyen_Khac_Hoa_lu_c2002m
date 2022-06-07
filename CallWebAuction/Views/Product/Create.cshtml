@@ -1,0 +1,71 @@
+﻿@model CallWebAuction.Models.Product
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="page-title-box">
+
+
+                <h1>Create</h1>
+
+                <h4>Product</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="Name" class="control-label"></label>
+                                <input asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Image" class="control-label"></label>
+                                <input asp-for="Image" class="form-control" />
+                                <span asp-validation-for="Image" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="M_Price" class="control-label"></label>
+                                <input asp-for="M_Price" class="form-control" />
+                                <span asp-validation-for="M_Price" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Id_Cate" class="control-label"></label>
+                                <input asp-for="Id_Cate" class="form-control" />
+                                <span asp-validation-for="Id_Cate" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DesCription" class="control-label"></label>
+                                <input asp-for="DesCription" class="form-control" />
+                                <span asp-validation-for="DesCription" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="SorfDescription" class="control-label"></label>
+                                <input asp-for="SorfDescription" class="form-control" />
+                                <span asp-validation-for="SorfDescription" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div>
+                    <a asp-action="Index">Back to List</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END ROW -->
+
+    </div>
+    <!-- container-fluid -->
+
+</div>
+<!-- content -->

@@ -1,0 +1,84 @@
+﻿@model CallWebAuction.Models.User
+
+@{
+    ViewData["AdminView"] = "Create";
+}
+<div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="page-title-box">
+
+
+                <h1>Create</h1>
+
+                <h4>User</h4>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="Name" class="control-label"></label>
+                                <input asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="UserName" class="control-label"></label>
+                                <input asp-for="UserName" class="form-control" />
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password" class="control-label"></label>
+                                <input asp-for="Password" class="form-control" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Coin" class="control-label"></label>
+                                <input asp-for="Coin" class="form-control" />
+                                <span asp-validation-for="Coin" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email" class="control-label"></label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Phone" class="control-label"></label>
+                                <input asp-for="Phone" class="form-control" />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Id_Roles" class="control-label"></label>
+                                <input asp-for="Id_Roles" class="form-control" />
+                                <span asp-validation-for="Id_Roles" class="text-danger"></span>
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" asp-for="Incognito" /> @Html.DisplayNameFor(model => model.Incognito)
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="CreateDate" class="control-label"></label>
+                                <input asp-for="CreateDate" class="form-control" />
+                                <span asp-validation-for="CreateDate" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- END ROW -->
+
+    </div>
+    <!-- container-fluid -->
+
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

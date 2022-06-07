@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/login/style.css">
+
+</head>
+<body>
+    <div>
+        <div class="box-form">
+            <div class="left">
+                <div class="overlay">
+                    <h1>Welcome</h1>
+                    <p>
+                        Welcome to the auction page, here we have a lot of auctions happening every day
+                    </p>
+                    <span>
+                        <p>login with social media</p>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                    </span>
+                </div>
+            </div>
+            @RenderBody()
+
+
+        </div>
+        <!-- partial -->
+       
+    </div>
+</body>
+</html>

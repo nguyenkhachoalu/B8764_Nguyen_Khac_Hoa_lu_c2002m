@@ -1,0 +1,70 @@
+﻿@model IEnumerable<CallWebAuction.Models.Category>
+@{
+    ViewData["AdminView"] = "Index";
+}
+
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="page-title-box">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">User</div>
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Id</th>
+                                        <th>Name</th>
+                                        <th>CreateDate</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                               
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Id)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Name)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.CreateDate)
+                                            </td>
+                                            <td>
+                                                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+
+                                                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                }
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- END ROW -->
+
+        </div>
+        <!-- container-fluid -->
+
+    </div>
+    <!-- content -->
+<!-- ============================================================== -->
+<!-- End Right content here -->
+<!-- ============================================================== -->
+<!-- END wrapper -->
